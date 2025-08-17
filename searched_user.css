@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: #4a77d4;
+    color: #fff;
+}
+
+.menu_side {
+    width: 20%;
+    background: #3a65c0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu_side h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.setting a {
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.setting a.active,
+.setting a:hover {
+    background: #ffb400;
+    transform: scale(1.05);
+}
+
+.song_side {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.user_information {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #4a77d4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prof_description {
+    flex: 1;
+    color: #fff;
+}
+
+.prof_description .user_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user_description {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.post {
+    text-align: center;
+    color: #fff;
+}
+
+.post span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.prof_picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffb400;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.prof_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.follow-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.follow-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.follow_button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu_side {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .song_side {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .user_information {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .user_description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prof_picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .follow-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+}
+.menu_side {
+    width: 20%;
+    background: #3a65c0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    float: left;
+}
+
+.menu_side h1 {
+    margin-bottom: 30px;
+}
+
+.menu_side .setting a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu_side .setting a.active,
+.menu_side .setting a:hover {
+    background: #ffb400;
+}
+.notifications_side {
+    margin-left: 20%;
+    padding: 20px;
+    background: #fff;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.notifications_side h2 {
+    margin-bottom: 20px;
+    color: #3a65c0;
+}
+
+.notification_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+
+.notification_item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s;}
+
+.notification_item:hover {
+    background: #ececec;}
+
+.notification_icon {
+    font-size: 1.5rem;
+    color: #ffb400;
+    margin-right: 15px;
+}
+
+.notification_time {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: auto;
+}
