@@ -86,7 +86,7 @@ $conn->close();
 <body>
     <form action="login.php" method="POST">
         <div class="form-container">
-            <h2>Login to Rami's Social</h2>
+            <h2>Login to Social Music</h2>
 
             <input type="text" name="username" placeholder="Username" class="input-field" required>
             <input type="password" name="password" placeholder="Password" class="input-field" required>
