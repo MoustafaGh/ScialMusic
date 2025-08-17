@@ -40,7 +40,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Rami's Social. All Rights Reserved.</p>
+        <p>&copy; 2024 Social Music. All Rights Reserved.</p>
     </footer>
 </body>
 
