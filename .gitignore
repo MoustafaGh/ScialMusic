@@ -1,0 +1,17 @@
+# Ignore uploads (user images, mp3s, etc.)
+uploads/
+
+# Ignore OS files
+Thumbs.db
+.DS_Store
+
+# Ignore IDE/project settings
+.idea/
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore sensitive config
+config.php
+.env
